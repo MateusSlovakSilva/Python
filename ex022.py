@@ -1,0 +1,12 @@
+msg = ('Exercícios 022')
+print(msg)
+nome = str(input('Digite seu nome completo: ')).strip()  #.strip() vai corta os espaço no inicio e depois das palavras
+print('Analisando seu nome...')
+print('Seu nome em maiúsculo é {}.'.format(nome.upper()))
+print('Seu nome em minúsculo é {}.'.format(nome.lower()))
+print('Seu nome tem ao todo {} letras.'.format(len(nome)- nome.count(' ')))
+print('Seu primeiro nome tem {} letras.'.format(nome.find(' ')))
+separa = nome.split()
+segundonome = nome.split()
+print('Seu primeiro nome é {} e ele tem {} letras.'.format(separa[0], len(separa[0])))
+print('Seu segundo nome é {} e ele tem {} letras.'.format(segundonome[1], len(segundonome[1])))
